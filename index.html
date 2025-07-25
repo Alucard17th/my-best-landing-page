@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/fullpage.js/dist/fullpage.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container content">
+      <div class="hero">
+        <div class="column">
+          <h1>Hero</h1>
+          <p>
+            Hero description here Hero description here Hero description here
+          </p>
+          <button class="btn">Call to action</button>
+        </div>
+        <div class="column">
+          <img class="hero-img" src="images/hero.png" alt="hero" />
+        </div>
+      </div>
+    </div>
+
+    <div class="section"><h1>fullPage.js</h1></div>
+    <div class="section">
+      <div class="slide"><h1>Section 2</h1></div>
+      <div class="slide"><h1>Slide 2.2</h1></div>
+      <div class="slide"><h1>Slide 2.3</h1></div>
+    </div>
+    <div class="section" id="section2"><h1>Section3</h1></div>
+
+    <!-- fullPage.js JS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/fullpage.js/dist/fullpage.min.js"
+    ></script>
+
+    <!-- Initialize fullPage.js -->
+    <script type="text/javascript">
+      var myFullpage = new fullpage("#fullpage", {
+        //options here
+        autoScrolling: true,
+        scrollHorizontally: true,
+      });
+    </script>
+  </body>
+</html>
